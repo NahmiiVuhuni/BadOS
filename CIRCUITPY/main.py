@@ -79,7 +79,11 @@ def page_select(p):
 #   m a i n   s e c t i o n
 
 # disable autoreload
-supervisor.disable_autoreload()
+# CirPy 7 and above
+supervisor.runtime.autoreload = False
+
+# CirPy 7 and below
+#supervisor.disable_autoreload()
 
 # variables
 menu_page = 0
